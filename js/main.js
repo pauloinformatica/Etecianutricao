@@ -63,9 +63,7 @@ botao.addEventListener("click", function (evento) {
     tr.appendChild(tdGordura);
 
 
-
     table.appendChild(tr);
-
 
 
    // console.log(tr);
