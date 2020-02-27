@@ -66,7 +66,7 @@ botao.addEventListener("click", function (evento) {
     table.appendChild(tr);
 
 
-   // console.log(tr);
+   // console.log(tr); Teste do Git
 });
 
     
