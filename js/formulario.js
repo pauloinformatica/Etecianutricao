@@ -1,31 +1,3 @@
-let pacientes = document.querySelectorAll(".paciente");
-
-pacientes.forEach(paciente => {
-    let peso = paciente.querySelector(".info-peso").textContent;
-    let altura = paciente.querySelector(".info-altura").textContent;
-
-    let pesoValido = true;
-    let alturaValida = true;
-
-    let tdIMC = paciente.querySelector(".info-imc");
-
-    if (peso <= 0 || peso > 1000) {
-        pesoValido = false;
-        tdIMC.textContent = "Peso inválido";
-        paciente.classList.add("paciente-invalido");
-    }
-    if (altura <= 0) {
-        alturaValida = false;
-        tdIMC.textContent = "Altura inválida";
-        paciente.classList.add("paciente-invalido");
-    }
-
-    if (pesoValido && alturaValida) {
-        let imc = peso / altura ** 2;
-        tdIMC.textContent = imc.toFixed(2);
-    }
-});
-
 let botao = document.querySelector("#botao_cadastrar");
 
 botao.addEventListener("click", function (evento) {
@@ -66,7 +38,7 @@ botao.addEventListener("click", function (evento) {
     table.appendChild(tr);
 
 
-   // console.log(tr); Teste do Git
+   // console.log(tr); 
 });
 
     
